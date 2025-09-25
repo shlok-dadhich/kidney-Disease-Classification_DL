@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: CNNClassifier
+Version: 0.0.0
+Summary: A small python package for CNN based classification of kidney disease
+Home-page: https://github.com/shlok-dadhich/Kidney-Disease-Classification_DL
+Author: shlok-dadhich
+Author-email: shlokshrama7@gmail.com
+Project-URL: Bug Tracker, https://github.com/shlok-dadhich/Kidney-Disease-Classification_DL/issues
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: summary
+
+# kidney-Disease-Classification_DL
+
+# How to run
+## steps
+Clone the repository
+
+```bash https://github.com/shlok-dadhich/kidney-Disease-Classification_DL.git ```
+
