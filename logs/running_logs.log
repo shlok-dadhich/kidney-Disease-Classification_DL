@@ -1,3 +1,146 @@
 [2025-09-26 22:35:04,261: INFO: main]: Starting the CNN Classifier application...
 [2025-09-26 22:42:15,795: INFO: main]: Starting the CNN Classifier application...
 [2025-09-26 22:42:41,277: INFO: main]: Starting the CNN Classifier application...
+[2025-09-27 01:47:27,048: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 01:47:27,057: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 01:51:11,134: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 01:51:11,136: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 01:51:46,794: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 01:51:46,796: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 01:51:46,799: INFO: common]: Created directory at: artifacts
+[2025-09-27 01:51:46,802: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 01:51:46,804: INFO: 2108146548]: Downloading file from : https://drive.google.com/file/d/1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=drive_link to : artifacts\data_injection\data.zip
+[2025-09-27 01:55:47,667: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 01:55:47,670: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 01:55:47,673: INFO: common]: Created directory at: artifacts
+[2025-09-27 01:55:47,674: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 01:55:47,678: INFO: 2108146548]: Downloading file from : https://drive.google.com/file/d/1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=drive_link to : artifacts\data_injection\data.zip
+[2025-09-27 02:00:26,990: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 02:00:26,993: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 02:00:26,996: INFO: common]: Created directory at: artifacts
+[2025-09-27 02:00:26,998: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 02:00:27,000: INFO: 3513763619]: Downloading file from : https://drive.google.com/file/d/1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=drive_link to : artifacts\data_injection\data.zip
+[2025-09-27 02:01:06,586: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 02:01:06,589: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 02:01:06,591: INFO: common]: Created directory at: artifacts
+[2025-09-27 02:01:06,594: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 02:01:06,596: INFO: 2789812827]: Downloading file from : https://drive.google.com/file/d/1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=drive_link to : artifacts\data_injection\data.zip
+[2025-09-27 02:02:18,786: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 02:02:18,788: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 02:02:18,791: INFO: common]: Created directory at: artifacts
+[2025-09-27 02:02:18,794: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 02:02:18,795: INFO: 2071522955]: Downloading file from : https://drive.google.com/file/d/1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=drive_link to : artifacts\data_injection\data.zip
+[2025-09-27 02:04:33,205: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 02:04:33,208: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 02:04:33,211: INFO: common]: Created directory at: artifacts
+[2025-09-27 02:04:33,213: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 02:04:33,215: INFO: 2071522955]: Downloading file from : https://drive.google.com/file/d/1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=drive_link to : artifacts\data_injection\data.zip
+[2025-09-27 02:04:42,027: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 02:04:42,030: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 02:04:42,033: INFO: common]: Created directory at: artifacts
+[2025-09-27 02:04:42,035: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 02:04:42,037: INFO: 3050489163]: Downloading file from : https://drive.google.com/file/d/1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=drive_link to : artifacts\data_injection\data.zip
+[2025-09-27 02:07:27,655: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 02:07:27,659: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 02:07:27,661: INFO: common]: Created directory at: artifacts
+[2025-09-27 02:07:27,668: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 02:07:27,671: INFO: 2846847418]: Downloading file from : https://drive.google.com/file/d/1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=drive_link to : artifacts\data_injection\data.zip
+[2025-09-27 02:09:06,002: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 02:09:06,005: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 02:09:06,009: INFO: common]: Created directory at: artifacts
+[2025-09-27 02:09:06,013: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 02:09:06,015: INFO: 3097298046]: Downloading file from : https://drive.google.com/file/d/1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=drive_link to : artifacts\data_injection\data.zip
+[2025-09-27 02:11:46,486: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 02:11:46,489: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 02:11:46,492: INFO: common]: Created directory at: artifacts
+[2025-09-27 02:11:46,496: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 02:11:46,499: INFO: 2746166564]: Downloading file from :[https://drive.google.com/file/d/1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=drive_link] to :[artifacts\data_injection\data.zip]
+[2025-09-27 23:19:37,993: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 23:19:38,001: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 23:19:38,004: INFO: common]: Created directory at: artifacts
+[2025-09-27 23:19:38,006: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 23:19:38,010: INFO: 2746166564]: Downloading file from :[https://drive.google.com/file/d/1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=drive_link] to :[artifacts\data_injection\data.zip]
+[2025-09-27 23:23:08,847: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 23:23:08,850: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 23:23:08,853: INFO: common]: Created directory at: artifacts
+[2025-09-27 23:23:08,855: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 23:23:08,858: INFO: 2746166564]: Downloading file from :[https://drive.google.com/file/d/1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=drive_link] to :[artifacts\data_injection\data.zip]
+[2025-09-27 23:26:11,655: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 23:26:11,658: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 23:26:11,660: INFO: common]: Created directory at: artifacts
+[2025-09-27 23:26:11,663: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 23:26:11,665: INFO: 2069769915]: Downloading file from :[https://drive.google.com/file/d/1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=drive_link] to :[artifacts\data_injection\data.zip]
+[2025-09-27 23:27:08,490: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 23:27:08,492: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 23:27:08,495: INFO: common]: Created directory at: artifacts
+[2025-09-27 23:27:08,499: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 23:27:08,504: INFO: 2069769915]: File already exists of size :[~ 104 KB]
+[2025-09-27 23:27:13,266: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 23:27:13,269: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 23:27:13,271: INFO: common]: Created directory at: artifacts
+[2025-09-27 23:27:13,273: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 23:27:13,276: INFO: 2069769915]: File already exists of size :[~ 104 KB]
+[2025-09-27 23:27:24,057: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 23:27:24,060: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 23:27:24,062: INFO: common]: Created directory at: artifacts
+[2025-09-27 23:27:24,064: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 23:27:24,067: INFO: 2069769915]: File already exists of size :[~ 104 KB]
+[2025-09-27 23:37:08,051: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 23:37:08,053: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 23:37:08,056: INFO: common]: Created directory at: artifacts
+[2025-09-27 23:37:08,058: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 23:37:08,061: INFO: 3970809810]: File already exists of size: [~ 104 KB]
+[2025-09-27 23:41:39,985: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-27 23:41:39,988: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-27 23:41:39,992: INFO: common]: Created directory at: artifacts
+[2025-09-27 23:41:40,095: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-27 23:41:40,099: INFO: 3970809810]: Downloading file from: [https://drive.google.com/uc?id=1japQFug4eo3bz9mKibbk-aR4YJVhU4H1] to: [artifacts\data_injection\data.zip]
+[2025-09-27 23:46:47,744: INFO: 3970809810]: Extracted zip file to: artifacts\data_injection
+[2025-09-28 12:48:18,512: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 12:48:18,540: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 12:48:18,543: INFO: common]: Created directory at: artifacts
+[2025-09-28 12:48:18,566: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-28 12:48:18,568: INFO: 113322524]: Downloading file from: https://drive.google.com/uc?id=1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=share_link
+[2025-09-28 12:54:35,159: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 12:54:35,163: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 12:54:35,165: INFO: common]: Created directory at: artifacts
+[2025-09-28 12:54:35,168: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-28 12:54:35,171: INFO: 2813457312]: Downloading file from: https://drive.google.com/uc?id=1japQFug4eo3bz9mKibbk-aR4YJVhU4H1/view?usp=share_link
+[2025-09-28 12:56:32,672: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 12:56:32,674: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 12:56:32,677: INFO: common]: Created directory at: artifacts
+[2025-09-28 12:56:32,680: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-28 12:56:32,684: INFO: 1482965000]: Downloading file from: https://drive.google.com/uc?id=1japQFug4eo3bz9mKibbk-aR4YJVhU4H1
+[2025-09-28 13:01:49,362: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 13:01:49,365: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 13:01:49,368: INFO: common]: Created directory at: artifacts
+[2025-09-28 13:01:49,370: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-28 13:01:49,373: INFO: 3970809810]: Downloading file from: [https://drive.google.com/uc?id=1japQFug4eo3bz9mKibbk-aR4YJVhU4H1] to: [artifacts\data_injection\data.zip]
+[2025-09-28 13:08:27,482: INFO: 3970809810]: Extracted zip file to: artifacts\data_injection
+[2025-09-28 16:06:16,381: ERROR: main]: name 'STAGE_NAME' is not defined
+Traceback (most recent call last):
+  File "F:\kidney-Disease-Classification_DL\main.py", line 6, in <module>
+    logger.info(f">>>>>>> Stage {STAGE_NAME} started <<<<<<<<")
+NameError: name 'STAGE_NAME' is not defined
+[2025-09-28 16:07:49,488: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-09-28 16:07:49,593: ERROR: main]: __init__() missing 1 required positional argument: 'config'
+Traceback (most recent call last):
+  File "F:\kidney-Disease-Classification_DL\main.py", line 9, in <module>
+    obj = DataIngestionTrainingPipeline()
+TypeError: __init__() missing 1 required positional argument: 'config'
+[2025-09-28 16:09:30,883: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-09-28 16:09:30,883: ERROR: main]: __init__() missing 4 required positional arguments: 'root_dir', 'source_URL', 'local_data_file', and 'unzip_dir'
+Traceback (most recent call last):
+  File "F:\kidney-Disease-Classification_DL\main.py", line 10, in <module>
+    obj = DataIngestionTrainingPipeline(DataInjectionConfig())
+TypeError: __init__() missing 4 required positional arguments: 'root_dir', 'source_URL', 'local_data_file', and 'unzip_dir'
+[2025-09-28 17:27:21,910: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-09-28 17:27:21,914: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-09-28 17:27:21,916: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-09-28 17:27:21,917: INFO: common]: Created directory at: artifacts
+[2025-09-28 17:27:21,919: INFO: common]: Created directory at: artifacts/data_injection
+[2025-09-28 17:27:21,920: INFO: data_ingestion]: Downloading file from: [https://drive.google.com/uc?id=1japQFug4eo3bz9mKibbk-aR4YJVhU4H1] to: [artifacts\data_injection\data.zip]
+[2025-09-28 17:34:54,186: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-09-28 17:34:54,190: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
