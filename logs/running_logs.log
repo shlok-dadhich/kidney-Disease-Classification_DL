@@ -144,3 +144,215 @@ TypeError: __init__() missing 4 required positional arguments: 'root_dir', 'sour
 [2025-09-28 17:34:54,190: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
 
 x==========x
+[2025-10-01 22:44:23,950: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-01 22:44:23,983: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-01 22:44:23,987: INFO: common]: Created directory at: artifacts
+[2025-10-01 22:44:23,990: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-01 22:49:14,115: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-01 22:49:14,119: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-01 22:49:14,121: INFO: common]: Created directory at: artifacts
+[2025-10-01 22:49:14,123: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-01 22:55:16,719: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-01 22:55:16,725: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-01 22:55:16,731: INFO: common]: Created directory at: artifacts
+[2025-10-01 22:55:16,734: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-01 22:59:12,424: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-01 22:59:12,430: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-01 22:59:12,434: INFO: common]: Created directory at: artifacts
+[2025-10-01 22:59:12,438: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-01 23:00:07,076: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-01 23:00:07,080: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-01 23:00:07,083: INFO: common]: Created directory at: artifacts
+[2025-10-01 23:00:07,087: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-01 23:00:36,848: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-01 23:00:36,852: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-01 23:00:36,855: INFO: common]: Created directory at: artifacts
+[2025-10-01 23:00:36,857: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-01 23:01:04,472: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2025-10-01 23:12:41,795: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-10-01 23:12:41,797: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-01 23:12:41,799: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-01 23:12:41,800: INFO: common]: Created directory at: artifacts
+[2025-10-01 23:12:41,801: INFO: common]: Created directory at: artifacts/data_injection
+[2025-10-01 23:12:41,801: INFO: data_ingestion]: Downloading file from: [https://drive.google.com/uc?id=1japQFug4eo3bz9mKibbk-aR4YJVhU4H1] to: [artifacts\data_injection\data.zip]
+[2025-10-01 23:17:04,026: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-10-01 23:17:04,033: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
+[2025-10-01 23:17:04,034: INFO: main]: >>>>>>> Stage Prepare Base Model Stage started <<<<<<<<
+[2025-10-01 23:17:04,035: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-01 23:17:04,037: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-01 23:17:04,037: INFO: common]: Created directory at: artifacts
+[2025-10-01 23:17:04,039: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-01 23:17:04,039: ERROR: main]: 'PrepareBaseModelConfig' object has no attribute 'params_include_top'
+Traceback (most recent call last):
+  File "F:\kidney-Disease-Classification_DL\main.py", line 21, in <module>
+    obj.main()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\pipeline\stage_02_prepare_base_model.py", line 18, in main
+    prepare_base_model.get_base_model()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\components\prepare_base_model.py", line 15, in get_base_model
+    include_top=self.config.params_include_top,
+AttributeError: 'PrepareBaseModelConfig' object has no attribute 'params_include_top'
+[2025-10-01 23:23:48,143: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-10-01 23:23:48,145: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-01 23:23:48,147: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-01 23:23:48,148: INFO: common]: Created directory at: artifacts
+[2025-10-01 23:23:48,148: INFO: common]: Created directory at: artifacts/data_injection
+[2025-10-01 23:23:48,149: INFO: data_ingestion]: Downloading file from: [https://drive.google.com/uc?id=1japQFug4eo3bz9mKibbk-aR4YJVhU4H1] to: [artifacts\data_injection\data.zip]
+[2025-10-01 23:29:33,668: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-10-01 23:29:33,672: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
+[2025-10-01 23:29:33,672: INFO: main]: >>>>>>> Stage Prepare Base Model Stage started <<<<<<<<
+[2025-10-01 23:29:33,674: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-01 23:29:33,675: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-01 23:29:33,675: INFO: common]: Created directory at: artifacts
+[2025-10-01 23:29:33,677: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-01 23:29:33,677: ERROR: main]: __init__() got an unexpected keyword argument 'image_size'
+Traceback (most recent call last):
+  File "F:\kidney-Disease-Classification_DL\main.py", line 21, in <module>
+    obj.main()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\pipeline\stage_02_prepare_base_model.py", line 16, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\config\configuration.py", line 30, in get_prepare_base_model_config
+    prepare_base_model_config = PrepareBaseModelConfig(
+TypeError: __init__() got an unexpected keyword argument 'image_size'
+[2025-10-02 00:08:12,435: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-10-02 00:08:12,438: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 00:08:12,440: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 00:08:12,441: INFO: common]: Created directory at: artifacts
+[2025-10-02 00:08:12,442: INFO: common]: Created directory at: artifacts/data_injection
+[2025-10-02 00:08:12,444: INFO: data_ingestion]: File already exists of size: [~ 1588634 KB]
+[2025-10-02 00:09:16,230: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-10-02 00:09:16,233: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
+[2025-10-02 00:09:16,234: INFO: main]: >>>>>>> Stage Prepare Base Model Stage started <<<<<<<<
+[2025-10-02 00:09:16,237: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 00:09:16,238: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 00:09:16,239: INFO: common]: Created directory at: artifacts
+[2025-10-02 00:09:16,239: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-02 00:09:16,240: ERROR: main]: PrepareBaseModelConfig() takes no arguments
+Traceback (most recent call last):
+  File "F:\kidney-Disease-Classification_DL\main.py", line 21, in <module>
+    obj.main()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\pipeline\stage_02_prepare_base_model.py", line 16, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\config\configuration.py", line 30, in get_prepare_base_model_config
+    prepare_base_model_config = PrepareBaseModelConfig(
+TypeError: PrepareBaseModelConfig() takes no arguments
+[2025-10-02 00:14:23,728: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-10-02 00:14:23,731: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 00:14:23,733: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 00:14:23,735: INFO: common]: Created directory at: artifacts
+[2025-10-02 00:14:23,735: INFO: common]: Created directory at: artifacts/data_injection
+[2025-10-02 00:14:23,737: INFO: data_ingestion]: File already exists of size: [~ 1588634 KB]
+[2025-10-02 00:15:28,559: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-10-02 00:15:28,565: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
+[2025-10-02 00:15:28,566: INFO: main]: >>>>>>> Stage Prepare Base Model Stage started <<<<<<<<
+[2025-10-02 00:15:28,569: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 00:15:28,574: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 00:15:28,575: INFO: common]: Created directory at: artifacts
+[2025-10-02 00:15:28,575: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-02 00:15:28,576: ERROR: main]: PrepareBaseModelConfig() takes no arguments
+Traceback (most recent call last):
+  File "F:\kidney-Disease-Classification_DL\main.py", line 21, in <module>
+    obj.main()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\pipeline\stage_02_prepare_base_model.py", line 16, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\config\configuration.py", line 30, in get_prepare_base_model_config
+    prepare_base_model_config = PrepareBaseModelConfig(
+TypeError: PrepareBaseModelConfig() takes no arguments
+[2025-10-02 00:20:02,655: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-10-02 00:20:02,657: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 00:20:02,659: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 00:20:02,660: INFO: common]: Created directory at: artifacts
+[2025-10-02 00:20:02,662: INFO: common]: Created directory at: artifacts/data_injection
+[2025-10-02 00:20:02,662: INFO: data_ingestion]: File already exists of size: [~ 1588634 KB]
+[2025-10-02 00:21:19,361: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-10-02 00:21:19,439: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
+[2025-10-02 00:21:19,439: INFO: main]: >>>>>>> Stage Prepare Base Model Stage started <<<<<<<<
+[2025-10-02 00:21:19,444: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 00:21:19,447: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 00:21:19,448: INFO: common]: Created directory at: artifacts
+[2025-10-02 00:21:19,449: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-02 00:21:19,449: ERROR: main]: PrepareBaseModelConfig() takes no arguments
+Traceback (most recent call last):
+  File "F:\kidney-Disease-Classification_DL\main.py", line 21, in <module>
+    obj.main()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\pipeline\stage_02_prepare_base_model.py", line 16, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\config\configuration.py", line 30, in get_prepare_base_model_config
+    prepare_base_model_config = PrepareBaseModelConfig(
+TypeError: PrepareBaseModelConfig() takes no arguments
+[2025-10-02 00:33:19,072: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-10-02 00:33:19,074: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 00:33:19,076: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 00:33:19,076: INFO: common]: Created directory at: artifacts
+[2025-10-02 00:33:19,077: INFO: common]: Created directory at: artifacts/data_injection
+[2025-10-02 00:33:19,078: INFO: data_ingestion]: File already exists of size: [~ 1588634 KB]
+[2025-10-02 00:34:22,862: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-10-02 00:34:22,954: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
+[2025-10-02 00:34:22,954: INFO: main]: >>>>>>> Stage Prepare Base Model Stage started <<<<<<<<
+[2025-10-02 00:34:22,956: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 00:34:22,957: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 00:34:22,958: INFO: common]: Created directory at: artifacts
+[2025-10-02 00:34:22,959: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-02 00:34:22,959: ERROR: main]: PrepareBaseModelConfig() takes no arguments
+Traceback (most recent call last):
+  File "F:\kidney-Disease-Classification_DL\main.py", line 21, in <module>
+    obj.main()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\config\configuration.py", line 30, in get_prepare_base_model_config
+    prepare_base_model_config = PrepareBaseModelConfig(
+TypeError: PrepareBaseModelConfig() takes no arguments
+[2025-10-02 00:37:36,884: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-10-02 00:37:36,886: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 00:37:36,887: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 00:37:36,888: INFO: common]: Created directory at: artifacts
+[2025-10-02 00:37:36,888: INFO: common]: Created directory at: artifacts/data_injection
+[2025-10-02 00:37:36,888: INFO: data_ingestion]: File already exists of size: [~ 1588634 KB]
+[2025-10-02 00:38:41,538: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-10-02 00:38:41,543: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
+[2025-10-02 00:38:41,543: INFO: main]: >>>>>>> Stage Prepare Base Model Stage started <<<<<<<<
+[2025-10-02 00:38:41,546: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 00:38:41,548: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 00:38:41,550: INFO: common]: Created directory at: artifacts
+[2025-10-02 00:38:41,550: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-02 00:38:41,550: ERROR: main]: __init__() got an unexpected keyword argument 'image_size'
+Traceback (most recent call last):
+  File "F:\kidney-Disease-Classification_DL\main.py", line 21, in <module>
+    obj.main()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\config\configuration.py", line 30, in get_prepare_base_model_config
+    prepare_base_model_config = PrepareBaseModelConfig(
+TypeError: __init__() got an unexpected keyword argument 'image_size'
+[2025-10-02 00:43:06,766: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-10-02 00:43:06,768: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 00:43:06,772: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 00:43:06,774: INFO: common]: Created directory at: artifacts
+[2025-10-02 00:43:06,776: INFO: common]: Created directory at: artifacts/data_injection
+[2025-10-02 00:43:06,777: INFO: data_ingestion]: File already exists of size: [~ 1588634 KB]
+[2025-10-02 00:44:11,300: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-10-02 00:44:11,322: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
+[2025-10-02 00:44:11,322: INFO: main]: >>>>>>> Stage Prepare Base Model Stage started <<<<<<<<
+[2025-10-02 00:44:11,406: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 00:44:11,408: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 00:44:11,410: INFO: common]: Created directory at: artifacts
+[2025-10-02 00:44:11,410: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-02 00:44:12,017: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2025-10-02 00:44:13,767: INFO: main]: >>>>>>> Stage Prepare Base Model Stage completed <<<<<<<<
+
+x==========x
