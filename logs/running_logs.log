@@ -356,3 +356,116 @@ x==========x
 [2025-10-02 00:44:13,767: INFO: main]: >>>>>>> Stage Prepare Base Model Stage completed <<<<<<<<
 
 x==========x
+[2025-10-02 02:29:17,150: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 02:29:17,155: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 02:29:17,158: INFO: common]: Created directory at: artifacts
+[2025-10-02 02:31:09,546: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 02:31:09,552: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 02:31:09,554: INFO: common]: Created directory at: artifacts
+[2025-10-02 02:31:09,558: INFO: common]: Created directory at: artifacts\training
+[2025-10-02 02:47:56,655: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-10-02 02:47:56,658: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 02:47:56,659: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 02:47:56,660: INFO: common]: Created directory at: artifacts
+[2025-10-02 02:47:56,660: INFO: common]: Created directory at: artifacts/data_injection
+[2025-10-02 02:47:56,660: INFO: data_ingestion]: File already exists of size: [~ 1588634 KB]
+[2025-10-02 02:48:47,822: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-10-02 02:48:47,826: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
+[2025-10-02 02:48:47,826: INFO: main]: >>>>>>> Stage Prepare Base Model Stage started <<<<<<<<
+[2025-10-02 02:48:47,829: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 02:48:47,831: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 02:48:47,832: INFO: common]: Created directory at: artifacts
+[2025-10-02 02:48:47,833: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-02 02:48:48,557: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2025-10-02 02:48:51,039: INFO: main]: >>>>>>> Stage Prepare Base Model Stage completed <<<<<<<<
+
+x==========x
+[2025-10-02 02:48:51,040: INFO: main]: >>>>>>> Stage Training started <<<<<<<<
+[2025-10-02 02:48:51,042: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 02:48:51,045: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 02:48:51,046: INFO: common]: Created directory at: artifacts
+[2025-10-02 02:48:51,049: ERROR: main]: "'ConfigBox' object has no attribute 'data_ingestion'"
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'data_ingestion'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'data_ingestion'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'data_ingestion'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_ingestion'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'data_ingestion'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'data_ingestion'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'data_ingestion'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\kidney-Disease-Classification_DL\main.py", line 33, in <module>
+    obj.main()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\pipeline\stage_03_model_training.py", line 13, in main
+    training_config = config.get_training_config()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\config\configuration.py", line 46, in get_training_config
+    training_data = os.path.join(self.config.data_ingestion.unzip_dir,"CT-KIDNEY-DATASET-Normal-Cyst-Tumor-Stone")
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'data_ingestion'"
+[2025-10-02 02:50:59,335: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-10-02 02:50:59,350: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 02:50:59,353: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 02:50:59,353: INFO: common]: Created directory at: artifacts
+[2025-10-02 02:50:59,354: INFO: common]: Created directory at: artifacts/data_injection
+[2025-10-02 02:50:59,354: INFO: data_ingestion]: File already exists of size: [~ 1588634 KB]
+[2025-10-02 02:51:50,380: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-10-02 02:51:50,384: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
+[2025-10-02 02:51:50,385: INFO: main]: >>>>>>> Stage Prepare Base Model Stage started <<<<<<<<
+[2025-10-02 02:51:50,386: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 02:51:50,388: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 02:51:50,389: INFO: common]: Created directory at: artifacts
+[2025-10-02 02:51:50,389: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-02 02:51:51,088: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2025-10-02 02:51:52,650: INFO: main]: >>>>>>> Stage Prepare Base Model Stage completed <<<<<<<<
+
+x==========x
+[2025-10-02 02:51:52,651: INFO: main]: >>>>>>> Stage Training started <<<<<<<<
+[2025-10-02 02:51:52,653: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 02:51:52,655: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 02:51:52,656: INFO: common]: Created directory at: artifacts
+[2025-10-02 02:51:52,656: INFO: common]: Created directory at: artifacts\training
+[2025-10-02 03:36:53,947: INFO: main]: >>>>>>> Stage Training completed <<<<<<<<
+
+x==========x
