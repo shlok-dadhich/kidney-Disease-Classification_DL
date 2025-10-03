@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/kidney-Disease-Classification_DL/mlruns/0/6f27243ef89b41d49d88d0ab109e52e1/artifacts
+end_time: 1759513536942
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6f27243ef89b41d49d88d0ab109e52e1
+run_name: delicate-cub-879
+run_uuid: 6f27243ef89b41d49d88d0ab109e52e1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759513518918
+status: 3
+tags: []
+user_id: dadhi

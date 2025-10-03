@@ -469,3 +469,169 @@ x==========x
 [2025-10-02 03:36:53,947: INFO: main]: >>>>>>> Stage Training completed <<<<<<<<
 
 x==========x
+[2025-10-02 23:02:11,063: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 23:02:11,095: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 23:02:11,097: INFO: common]: Created directory at: artifacts
+[2025-10-02 23:27:36,189: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-10-02 23:27:36,192: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 23:27:36,194: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 23:27:36,195: INFO: common]: Created directory at: artifacts
+[2025-10-02 23:27:36,196: INFO: common]: Created directory at: artifacts/data_injection
+[2025-10-02 23:27:36,197: INFO: data_ingestion]: File already exists of size: [~ 1588634 KB]
+[2025-10-02 23:28:40,514: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-10-02 23:28:40,519: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
+[2025-10-02 23:28:40,519: INFO: main]: >>>>>>> Stage Prepare Base Model Stage started <<<<<<<<
+[2025-10-02 23:28:40,521: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 23:28:40,523: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 23:28:40,523: INFO: common]: Created directory at: artifacts
+[2025-10-02 23:28:40,524: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-02 23:28:41,320: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2025-10-02 23:28:42,485: INFO: main]: >>>>>>> Stage Prepare Base Model Stage completed <<<<<<<<
+
+x==========x
+[2025-10-02 23:28:42,485: INFO: main]: >>>>>>> Stage Training started <<<<<<<<
+[2025-10-02 23:28:42,488: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-02 23:28:42,491: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-02 23:28:42,492: INFO: common]: Created directory at: artifacts
+[2025-10-02 23:28:42,493: INFO: common]: Created directory at: artifacts\training
+[2025-10-03 00:17:08,674: INFO: main]: >>>>>>> Stage Training completed <<<<<<<<
+
+x==========x
+[2025-10-03 00:17:08,675: INFO: main]: >>>>>>> Stage Model Evaluation Stage started <<<<<<<<
+[2025-10-03 00:17:08,680: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-03 00:17:08,682: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-03 00:17:08,684: INFO: common]: Created directory at: artifacts
+[2025-10-03 00:28:31,721: INFO: common]: json file saved at: scores.json
+[2025-10-03 00:28:34,060: WARNING: save]: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.
+[2025-10-03 00:28:35,119: INFO: builder_impl]: Assets written to: C:\Users\dadhi\AppData\Local\Temp\tmpins0l_kh\model\data\model\assets
+[2025-10-03 00:28:55,551: ERROR: main]: No module named 'distutils._modified'
+Traceback (most recent call last):
+  File "F:\kidney-Disease-Classification_DL\main.py", line 45, in <module>
+    obj.main()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\pipeline\stage_04_model_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\components\model_evaluation.py", line 62, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\setuptools\_distutils\dir_util.py", line 150, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\setuptools\_distutils\dir_util.py", line 192, in _copy_one
+    file_util.copy_file(
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\setuptools\_distutils\file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'
+[2025-10-03 18:08:21,455: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-10-03 18:08:21,575: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-03 18:08:21,609: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-03 18:08:21,611: INFO: common]: Created directory at: artifacts
+[2025-10-03 18:08:21,612: INFO: common]: Created directory at: artifacts/data_injection
+[2025-10-03 18:08:21,614: INFO: data_ingestion]: File already exists of size: [~ 1588634 KB]
+[2025-10-03 18:10:09,251: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-10-03 18:10:09,254: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
+[2025-10-03 18:10:09,255: INFO: main]: >>>>>>> Stage Prepare Base Model Stage started <<<<<<<<
+[2025-10-03 18:10:09,256: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-03 18:10:09,258: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-03 18:10:09,258: INFO: common]: Created directory at: artifacts
+[2025-10-03 18:10:09,259: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-03 18:10:09,986: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2025-10-03 18:10:10,605: INFO: main]: >>>>>>> Stage Prepare Base Model Stage completed <<<<<<<<
+
+x==========x
+[2025-10-03 18:10:10,605: INFO: main]: >>>>>>> Stage Training started <<<<<<<<
+[2025-10-03 18:10:10,607: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-03 18:10:10,609: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-03 18:10:10,611: INFO: common]: Created directory at: artifacts
+[2025-10-03 18:10:10,611: INFO: common]: Created directory at: artifacts\training
+[2025-10-03 18:51:44,360: INFO: main]: >>>>>>> Stage Training completed <<<<<<<<
+
+x==========x
+[2025-10-03 18:51:44,360: INFO: main]: >>>>>>> Stage Model Evaluation Stage started <<<<<<<<
+[2025-10-03 18:51:44,362: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-03 18:51:44,364: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-03 18:51:44,365: INFO: common]: Created directory at: artifacts
+[2025-10-03 18:59:48,217: INFO: common]: json file saved at: scores.json
+[2025-10-03 18:59:50,279: WARNING: save]: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.
+[2025-10-03 18:59:51,075: INFO: builder_impl]: Assets written to: C:\Users\dadhi\AppData\Local\Temp\tmp69jig1bv\model\data\model\assets
+[2025-10-03 19:00:05,590: ERROR: main]: No module named 'distutils._modified'
+Traceback (most recent call last):
+  File "F:\kidney-Disease-Classification_DL\main.py", line 45, in <module>
+    obj.main()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\pipeline\stage_04_model_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "f:\kidney-disease-classification_dl\src\CNNClassifier\components\model_evaluation.py", line 62, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\setuptools\_distutils\dir_util.py", line 150, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\setuptools\_distutils\dir_util.py", line 192, in _copy_one
+    file_util.copy_file(
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\setuptools\_distutils\file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'
+[2025-10-03 22:04:16,343: INFO: main]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-10-03 22:04:16,439: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-03 22:04:16,449: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-03 22:04:16,450: INFO: common]: Created directory at: artifacts
+[2025-10-03 22:04:16,453: INFO: common]: Created directory at: artifacts/data_injection
+[2025-10-03 22:04:16,455: INFO: data_ingestion]: File already exists of size: [~ 1588634 KB]
+[2025-10-03 22:06:02,521: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-10-03 22:06:02,529: INFO: main]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
+[2025-10-03 22:06:02,529: INFO: main]: >>>>>>> Stage Prepare Base Model Stage started <<<<<<<<
+[2025-10-03 22:06:02,536: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-03 22:06:02,541: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-03 22:06:02,542: INFO: common]: Created directory at: artifacts
+[2025-10-03 22:06:02,545: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-03 22:06:04,380: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2025-10-03 22:06:05,790: INFO: main]: >>>>>>> Stage Prepare Base Model Stage completed <<<<<<<<
+
+x==========x
+[2025-10-03 22:06:05,791: INFO: main]: >>>>>>> Stage Training started <<<<<<<<
+[2025-10-03 22:06:05,797: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-03 22:06:05,801: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-03 22:06:05,802: INFO: common]: Created directory at: artifacts
+[2025-10-03 22:06:05,805: INFO: common]: Created directory at: artifacts\training
+[2025-10-03 23:03:55,078: INFO: main]: >>>>>>> Stage Training completed <<<<<<<<
+
+x==========x
+[2025-10-03 23:03:55,079: INFO: main]: >>>>>>> Stage Model Evaluation Stage started <<<<<<<<
+[2025-10-03 23:03:55,083: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-03 23:03:55,087: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-03 23:03:55,089: INFO: common]: Created directory at: artifacts
+[2025-10-03 23:15:18,179: INFO: common]: json file saved at: scores.json
+[2025-10-03 23:15:20,431: WARNING: save]: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.
+[2025-10-03 23:15:21,529: INFO: builder_impl]: Assets written to: C:\Users\dadhi\AppData\Local\Temp\tmpl6aqzx7n\model\data\model\assets
+[2025-10-03 23:15:36,778: INFO: dir_util]: creating F:\kidney-Disease-Classification_DL\mlruns\0\6f27243ef89b41d49d88d0ab109e52e1\artifacts\model\data
+[2025-10-03 23:15:36,785: INFO: dir_util]: creating F:\kidney-Disease-Classification_DL\mlruns\0\6f27243ef89b41d49d88d0ab109e52e1\artifacts\model\data\model
+[2025-10-03 23:15:36,787: INFO: dir_util]: creating F:\kidney-Disease-Classification_DL\mlruns\0\6f27243ef89b41d49d88d0ab109e52e1\artifacts\model\data\model\assets
+[2025-10-03 23:15:36,793: INFO: dir_util]: creating F:\kidney-Disease-Classification_DL\mlruns\0\6f27243ef89b41d49d88d0ab109e52e1\artifacts\model\data\model\variables
+[2025-10-03 23:15:36,944: INFO: main]: >>>>>>> Stage Model Evaluation Stage completed <<<<<<<<
+
+x==========x

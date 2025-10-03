@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/kidney-Disease-Classification_DL/mlruns/0/5eda9362d1b7482380c3d96d9bc146b4/artifacts
+end_time: 1759431535545
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5eda9362d1b7482380c3d96d9bc146b4
+run_name: bright-mink-125
+run_uuid: 5eda9362d1b7482380c3d96d9bc146b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759431512245
+status: 4
+tags: []
+user_id: dadhi

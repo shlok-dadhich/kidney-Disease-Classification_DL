@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/kidney-Disease-Classification_DL/mlruns/0/e01b38316d5541d6b8f72184dbc1a8a4/artifacts
+end_time: 1759498205587
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e01b38316d5541d6b8f72184dbc1a8a4
+run_name: thundering-sloth-985
+run_uuid: e01b38316d5541d6b8f72184dbc1a8a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759498189075
+status: 4
+tags: []
+user_id: dadhi
