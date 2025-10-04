@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/kidney-Disease-Classification_DL/mlruns/0/9dfc23b570774a4f9553d4af4b6b50ec/artifacts
+end_time: 1759526468132
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9dfc23b570774a4f9553d4af4b6b50ec
+run_name: sassy-fly-591
+run_uuid: 9dfc23b570774a4f9553d4af4b6b50ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759526455546
+status: 3
+tags: []
+user_id: dadhi

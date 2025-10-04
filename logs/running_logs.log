@@ -659,3 +659,25 @@ x==========x
 [2025-10-04 01:45:21,904: INFO: common]: yaml file: params.yaml loaded successfully
 [2025-10-04 01:45:21,908: INFO: common]: Created directory at: artifacts
 [2025-10-04 01:45:21,909: INFO: common]: Created directory at: artifacts\training
+[2025-10-04 01:46:14,146: INFO: stage_03_model_training]: >>>>>>> Stage Training started <<<<<<<<
+[2025-10-04 01:46:14,147: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-04 01:46:14,150: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-04 01:46:14,151: INFO: common]: Created directory at: artifacts
+[2025-10-04 01:46:14,151: INFO: common]: Created directory at: artifacts\training
+[2025-10-04 02:42:20,856: INFO: stage_03_model_training]: >>>>>>> Stage Training completed <<<<<<<<
+
+x==========x
+[2025-10-04 02:42:39,785: INFO: stage_04_model_evaluation]: >>>>>>> Stage Model Evaluation Stage started <<<<<<<<
+[2025-10-04 02:42:39,788: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-04 02:42:39,790: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-04 02:42:39,790: INFO: common]: Created directory at: artifacts
+[2025-10-04 02:50:55,185: INFO: common]: json file saved at: scores.json
+[2025-10-04 02:50:56,926: WARNING: save]: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.
+[2025-10-04 02:50:57,859: INFO: builder_impl]: Assets written to: C:\Users\dadhi\AppData\Local\Temp\tmpudvya1da\model\data\model\assets
+[2025-10-04 02:51:08,004: INFO: dir_util]: creating F:\kidney-Disease-Classification_DL\mlruns\0\9dfc23b570774a4f9553d4af4b6b50ec\artifacts\model\data
+[2025-10-04 02:51:08,008: INFO: dir_util]: creating F:\kidney-Disease-Classification_DL\mlruns\0\9dfc23b570774a4f9553d4af4b6b50ec\artifacts\model\data\model
+[2025-10-04 02:51:08,008: INFO: dir_util]: creating F:\kidney-Disease-Classification_DL\mlruns\0\9dfc23b570774a4f9553d4af4b6b50ec\artifacts\model\data\model\assets
+[2025-10-04 02:51:08,013: INFO: dir_util]: creating F:\kidney-Disease-Classification_DL\mlruns\0\9dfc23b570774a4f9553d4af4b6b50ec\artifacts\model\data\model\variables
+[2025-10-04 02:51:08,134: INFO: stage_04_model_evaluation]: >>>>>>> Stage Model Evaluation Stage completed <<<<<<<<
+
+x==========x
