@@ -21,5 +21,5 @@ class Prediction:
             prediction = "Stone"
         else:
             prediction = "Tumor"
-        return prediction
+        return {"prediction": prediction}
         

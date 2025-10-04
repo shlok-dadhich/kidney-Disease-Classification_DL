@@ -3,237 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Object Classifier</title>
-    <link
-      rel="shortcut icon"
-      href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzRmNThkZSI+PHBhdGggZD0iTTIxIDEzLjVjMC0uNTYtLjQxLTEuMDUtLjk3LTEuMiBsLTMuMDMtLjc2Yy0uNTYtLjE0LTEuMTcuMi0xLjQxLjc0bC0uNzYgMS43Yy0uMzYuODEtMS4yOCAxLjI0LTIuMjEgMS4xM0w5LjUgMTQuOWMtLjg3LS4xLTEuNjMtLjY1LTIuMDYtMS40MmwtMS45MS0zLjQ1Yy0uNDktLjg4LS4wMi0xLjk5Ljk5LTIuMzdsMy4yOS0xLjI0Yy44NS0uMzIgMS44NS0uMDQgMi40OC42MWw.NCAuNTRjLjY1LjY2IDEuNjkuNjYgMi4zNCAwbDEuNzctMS43N2MuNjYtLjY1LjY2LTEuNjkgMC0yLjM0bC0uNDQtLjQ0Yy0uNjUtLjY2LTEuNjktLjY2LTIuMzQgMEwxMy41IDQuNWMtLjY2LjY1LTEuNjkuNjUtMi4zNCAwTDYuNSA5LjY3Yy0uNjYtLjY2LTEuNjktLjY2LTIuMzQgMEwzLjUgOC45OWMtLjY1LjY2LS42NSAxLjY5IDAgMi4zNGwxLjc3IDEuNzdjLjY2LjY1IDEuNjkuNjUgMi4zNCAwTDkgMTQuMjNjLjM0LS4zNC44LS41IDEuMjctLjQ0bDMuMDguMzljLjU4LjA3IDEuMDYuNTEgMS4xMyAxLjA5bC43NSAxLjY4Yy4yNS41Ni44Ni45MSAxLjQ0Ljc3bDIuOTctLjc0Yy42LS4xNSAxLjA2LS42OCAxLjA2LTEuMzF6bS0zIDRjLTEuMSAwLTIgLjktMiAyczIgLjkgMiAyczItLjkgMi0yLS45LTIgMi0yem0tOSA0YzEuMSAwIDItLjkgMi0yczIgLjkgMi0yczItLjkgMi0yLS45LTIgMi0yeiI+PC9wYXRoPjwvc3ZnPg=="
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
+    <title>Kidney Disease Classification</title>
 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
     <style>
-      :root {
-        --primary-color: #4f58de;
-        --secondary-color: #1b2d6b;
-        --light-color: #f4f7ff;
-        --text-color: #333;
-        --border-radius: 12px;
-        --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
-      }
-
       body {
-        font-family: "Poppins", sans-serif;
-        background-color: var(--light-color);
-        background-image: radial-gradient(
-            at 0% 0%,
-            hsla(253, 100%, 75%, 0.3) 0px,
-            transparent 50%
-          ),
-          radial-gradient(
-            at 98% 18%,
-            hsla(240, 100%, 75%, 0.2) 0px,
-            transparent 50%
-          ),
-          radial-gradient(
-            at 80% 80%,
-            hsla(284, 100%, 75%, 0.2) 0px,
-            transparent 50%
-          );
-        color: var(--text-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        padding: 2rem;
-        box-sizing: border-box;
+        background-color: #eff2f9;
       }
-
-      .main-container {
-        width: 100%;
-        max-width: 1200px;
-      }
-
-      /* Glassmorphism Card Style */
-      .glass-card {
-        background: rgba(255, 255, 255, 0.6);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: var(--border-radius);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: var(--shadow);
-        padding: 2rem;
-        margin-bottom: 2rem;
-      }
-
-      h3.title {
-        color: var(--secondary-color);
+      .iupload h3 {
+        color: #1b2d6b;
+        font-size: 30px;
         font-weight: 700;
-        text-align: center;
-        margin-bottom: 2rem;
       }
-
-      h5.subtitle {
-        text-align: center;
-        color: var(--secondary-color);
-        font-weight: 500;
-        margin-bottom: 1.5rem;
+      .img-part {
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
       }
-
-      .content-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        align-items: start;
-      }
-
-      /* --- Image Input Area --- */
-      .image-part-wrapper {
-        position: relative;
-        width: 100%;
-        padding-top: 100%; /* Aspect Ratio 1:1 */
-        border-radius: var(--border-radius);
-        overflow: hidden;
-        background: #e0e5f5;
-        border: 2px dashed var(--primary-color);
-        transition: all 0.3s ease;
-      }
-
-      .image-part-wrapper.drag-over {
-        transform: scale(1.02);
-        border-style: solid;
-      }
-
-      .image-part-wrapper .drop-zone-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: var(--primary-color);
-        text-align: center;
-        pointer-events: none;
-      }
-
-      .image-part-wrapper .drop-zone-text i {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-      }
-
-      .image-part-wrapper video,
-      .image-part-wrapper img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: var(--border-radius);
-      }
-
-      #photo {
-        display: none;
-      }
-
-      /* --- Buttons --- */
-      .btn-part {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 1rem;
-        margin-top: 1.5rem;
-      }
-
-      .btn {
-        border: none;
-        padding: 0.8rem 1.5rem;
-        border-radius: 8px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.3s ease;
+      .image-part {
+        height: 300px;
+        width: 300px;
+        border: 1px solid #1b2d6b;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 0.5rem;
       }
-
-      .btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      .image-part img {
+        max-height: 300px;
+        max-width: 300px;
+        padding: 5px;
       }
-      .btn:active {
-        transform: translateY(-1px);
-      }
-
-      .btn-primary {
-        background-color: var(--primary-color);
-        color: white;
-      }
-      .btn-secondary {
-        background-color: var(--secondary-color);
-        color: white;
-      }
-      .btn-success {
-        background-color: #28a745;
-        color: white;
-      }
-
-      #fileinput {
-        display: none;
-      }
-
-      /* --- Results Area --- */
-      .results-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-        height: 100%;
-      }
-
       .res-part {
-        background: rgba(255, 255, 255, 0.8);
-        border-radius: var(--border-radius);
-        padding: 1rem;
-        height: 400px; /* Fixed height for scroll */
-        overflow-y: auto;
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: 1px solid #dedede;
+        height: 310px;
+        width: 100%;
+        padding: 5px;
+        margin: 0 auto;
+        overflow: auto;
       }
-
-      .res-part.image-display {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #e0e5f5;
+      .btn-part {
+        width: 325px;
+        margin: auto;
       }
-
-      .res-part .placeholder {
-        color: #888;
-        text-align: center;
+      textarea,
+      select,
+      .form-control,
+      .custom-select,
+      button.btn,
+      input[type="text"],
+      input[type="file"] {
+        border: 1px solid #363e75;
+        border-radius: 0;
+        box-shadow: none;
       }
-
-      .resp-img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-        border-radius: 8px;
+      textarea:focus,
+      select:focus,
+      .form-control:focus,
+      .btn:focus,
+      .custom-select:focus,
+      input[type="text"]:focus {
+        border: 1px solid #007bff;
+        outline: 0 !important;
       }
-
-      .jsonRes pre {
-        white-space: pre-wrap;
-        word-wrap: break-word;
-        font-size: 0.85rem;
-        background-color: #eef2ff;
-        padding: 1rem;
-        border-radius: 8px;
-        color: var(--secondary-color);
-      }
-
-      /* --- Loading Spinner --- */
       #loading {
         position: fixed;
         left: 0;
@@ -242,21 +77,21 @@
         height: 100%;
         z-index: 9999;
         background: rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(5px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
       }
-
       .loader {
         border: 8px solid #f3f3f3;
-        border-top: 8px solid var(--primary-color);
+        border-top: 8px solid #363e75;
         border-radius: 50%;
         width: 60px;
         height: 60px;
-        animation: spin 1.5s linear infinite;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -30px;
+        margin-left: -30px;
+        animation: spin 2s linear infinite;
       }
-
       @keyframes spin {
         0% {
           transform: rotate(0deg);
@@ -265,309 +100,129 @@
           transform: rotate(360deg);
         }
       }
-
-      /* Responsive Design */
-      @media (max-width: 992px) {
-        .content-wrapper,
-        .results-wrapper {
-          grid-template-columns: 1fr;
-        }
-        .image-part-wrapper {
-          padding-top: 75%; /* Adjust aspect ratio for smaller screens */
-        }
+      .right-part {
+        border: 1px solid #dedede;
+        padding: 5px;
       }
     </style>
   </head>
   <body>
-    <div class="main-container">
-      <div class="glass-card">
-        <h3 class="title">✨ AI Object Classifier ✨</h3>
-        <div class="content-wrapper">
-          <div class="input-section">
-            <div class="image-part-wrapper" id="drop-zone">
-              <div class="drop-zone-text">
-                <i class="fa-solid fa-cloud-arrow-up"></i>
-                <p>
-                  <strong>Drag & Drop</strong> an image here <br />
-                  or use the buttons below
-                </p>
-              </div>
-              <video autoplay muted playsinline id="video"></video>
-              <img src="" id="photo" alt="Your upload" />
-              <canvas style="display: none" id="canvas"></canvas>
-            </div>
-
-            <div class="btn-part">
-              <button type="button" class="btn btn-primary" id="uload">
-                <i class="fa-solid fa-upload"></i> Upload File
-              </button>
-              <button type="button" class="btn btn-secondary" id="use-camera">
-                <i class="fa-solid fa-camera"></i> Use Camera
-              </button>
-            </div>
-
-            <button
-              id="send"
-              type="button"
-              class="btn btn-success"
-              style="
-                width: 100%;
-                margin-top: 1.5rem;
-                font-size: 1.2rem;
-                padding: 1rem;
-              "
-            >
-              <i class="fa-solid fa-rocket"></i> Predict!
-            </button>
-
-            <input type="hidden" id="url" value="../predict" />
-            <input name="upload" type="file" id="fileinput" accept="image/*" />
+    <div class="main container">
+      <section class="iupload">
+        <h3 class="text-center py-4">Kidney Disease Classification</h3>
+        <div class="row">
+          <div class="img-part col-md-6">
+            <div class="image-part">
+            <video autoplay id="video" poster="https://img.freepik.com/free-vector/group-young-people-posing-photo_52683-18824.jpg?size=338&ext=jpg"></video>
+            <img src="" id="photo">
+            <canvas style="display:none;" id="canvas"></canvas>
           </div>
-
-          <div class="output-section">
-            <h5 class="subtitle">Prediction Results</h5>
-            <div class="results-wrapper">
-              <div class="res-part image-display" id="res-part2">
-                <p class="placeholder">Processed image will appear here.</p>
-              </div>
-              <div class="res-part" id="res-part">
-                <p class="placeholder">JSON response will appear here.</p>
-              </div>
+            <div class="btn-part">
+              <form id="upload-data" class="pt-3">
+                <div class="input-group mt-3 row">
+                  <button
+                    type="button"
+                    class="btn btn-primary col-md-5 ml-3 mr-4"
+                    id="uload"
+                  >
+                    Upload
+                  </button>
+                  <button
+                    id="send"
+                    type="button"
+                    class="btn btn-success col-md-5"
+                  >
+                    Predict
+                  </button>
+                </div>
+                <input type="hidden" id="url" value="../predict" />
+                <input
+                  name="upload"
+                  type="file"
+                  id="fileinput"
+                  accept="image/*"
+                  style="position: absolute; top: -500px"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 right-part">
+            <h5 class="mb-2 text-center">Prediction Results</h5>
+            <div class="res-part">
+              <div class="jsonRes"></div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
     <div id="loading"><div class="loader"></div></div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-      $(document).ready(function () {
-        // --- Global Variables ---
-        let base_data = "";
-        let stream = null; // To hold the camera stream
+      var base_data = "";
 
-        // --- DOM Elements ---
-        const $loading = $("#loading");
-        const $video = $("#video");
-        const $photo = $("#photo");
-        const $canvas = $("#canvas");
-        const $resPart = $("#res-part");
-        const $resPart2 = $("#res-part2");
-        const $dropZone = $("#drop-zone");
+      function sendRequest(base64Data) {
+        if (!base64Data) {
+          alert("Please upload an image first.");
+          return;
+        }
 
-        $loading.hide();
+        var url = $("#url").val();
+        $("#loading").show();
 
-        // --- Core Functions ---
-        function sendRequest(base64Data) {
-          if (!base64Data) {
-            alert(
-              "Please upload an image or capture one from the camera first!"
+        $.ajax({
+          url: url,
+          type: "POST",
+          cache: false,
+          async: true,
+          crossDomain: true,
+          headers: {
+            "Content-Type": "application/json",
+          },
+          data: JSON.stringify({ image: base64Data }),
+          success: function (res) {
+            $(".res-part").html(
+              "<pre>" + JSON.stringify(res, undefined, 2) + "</pre>"
             );
-            return;
-          }
+            $("#loading").hide();
+          },
+          error: function () {
+            $("#loading").hide();
+            $(".res-part").html("<pre>Error: Could not get prediction.</pre>");
+          },
+        });
+      }
 
-          const url = $("#url").val();
-          $loading.show();
-          clearResults();
-
-          $.ajax({
-            url: url,
-            type: "post",
-            cache: false,
-            async: true,
-            crossDomain: true,
-            headers: {
-              "Content-Type": "application/json",
-              "Access-Control-Allow-Origin": "*",
-            },
-            data: JSON.stringify({ image: base64Data }),
-            success: function (res) {
-              // Display result image if available
-              try {
-                const imageData = res[1].image;
-                if (imageData && imageData.length > 100) {
-                  $resPart2.html(
-                    `<img class='resp-img' src='data:image/jpeg;base64,${imageData}' alt='Processed Image' />`
-                  );
-                }
-              } catch (e) {
-                $resPart2.html(
-                  '<p class="placeholder">No processed image returned.</p>'
-                );
-              }
-
-              // Display formatted JSON
-              const formattedJson = JSON.stringify(res[0], undefined, 2);
-              $resPart.html(
-                `<div class="jsonRes"><pre>${formattedJson}</pre></div>`
-              );
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-              console.error("API Error:", textStatus, errorThrown);
-              $resPart.html(
-                `<p class="placeholder" style="color:red;"><strong>Error:</strong> Could not get prediction. Check the console for details.</p>`
-              );
-            },
-            complete: function () {
-              $loading.hide();
-            },
-          });
-        }
-
-        function processFile(file) {
-          if (file && file.type.startsWith("image/")) {
-            stopCamera();
-            const reader = new FileReader();
-            reader.onload = function (e) {
-              const url = e.target.result;
-              displayImage(url);
-              urlToBase64(url);
-            };
-            reader.readAsDataURL(file);
-          } else {
-            alert("Please select a valid image file.");
-          }
-        }
-
-        function urlToBase64(url) {
-          const img = new Image();
-          img.crossOrigin = "Anonymous";
-          img.onload = function () {
-            const context = $canvas[0].getContext("2d");
-            $canvas[0].height = this.naturalHeight;
-            $canvas[0].width = this.naturalWidth;
-            context.drawImage(this, 0, 0);
-            base_data = $canvas[0]
-              .toDataURL("image/jpeg", 1.0)
-              .replace(/^data:image.+;base64,/, "");
-          };
-          img.src = url;
-        }
-
-        // --- UI Update Functions ---
-        function clearResults() {
-          $resPart.html(
-            '<p class="placeholder">JSON response will appear here.</p>'
-          );
-          $resPart2.html(
-            '<p class="placeholder">Processed image will appear here.</p>'
-          );
-        }
-
-        function displayImage(url) {
-          $photo.attr("src", url).show();
-          $video.hide();
-          $(".drop-zone-text").hide();
-        }
-
-        function displayVideo() {
-          $video.show();
-          $photo.hide();
-          $(".drop-zone-text").hide();
-        }
-
-        function displayDropZone() {
-          $video.hide();
-          $photo.hide();
-          $(".drop-zone-text").show();
-        }
-
-        // --- Camera Functionality ---
-        async function startCamera() {
-          if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-            try {
-              stream = await navigator.mediaDevices.getUserMedia({
-                video: true,
-              });
-              $video[0].srcObject = stream;
-              $video[0].play();
-              displayVideo();
-            } catch (err) {
-              console.error("Error accessing camera: ", err);
-              alert(
-                "Could not access the camera. Please ensure permissions are granted."
-              );
-            }
-          }
-        }
-
-        function stopCamera() {
-          if (stream) {
-            stream.getTracks().forEach((track) => track.stop());
-            $video[0].srcObject = null;
-            stream = null;
-            displayDropZone();
-          }
-        }
-
-        function captureFromCamera() {
-          const context = $canvas[0].getContext("2d");
-          const videoElement = $video[0];
-          $canvas[0].width = videoElement.videoWidth;
-          $canvas[0].height = videoElement.videoHeight;
-          context.drawImage(
-            videoElement,
-            0,
-            0,
-            videoElement.videoWidth,
-            videoElement.videoHeight
-          );
-
-          const dataUrl = $canvas[0].toDataURL("image/jpeg", 1.0);
-          displayImage(dataUrl); // Show the captured frame
-          base_data = dataUrl.replace(/^data:image.+;base64,/, "");
-
-          // Stop the camera after capture to save resources
-          stopCamera();
-        }
-
-        // --- Event Handlers ---
+      $(document).ready(function () {
         $("#send").click(function () {
-          // If camera is active, capture a frame first
-          if (stream) {
-            captureFromCamera();
-          }
-          // A short delay to ensure base64 is ready after capture
-          setTimeout(() => sendRequest(base_data), 100);
+          sendRequest(base_data);
         });
 
-        $("#uload").click(() => $("#fileinput").click());
+        $("#uload").click(function () {
+          $("#fileinput").trigger("click");
+        });
 
         $("#fileinput").change(function () {
-          processFile(this.files[0]);
-        });
-
-        $("#use-camera").click(function () {
-          if (!stream) {
-            startCamera();
-          } else {
-            stopCamera();
-          }
-        });
-
-        // --- Drag and Drop Event Handlers ---
-        $dropZone.on("dragover", function (e) {
-          e.preventDefault();
-          e.stopPropagation();
-          $(this).addClass("drag-over");
-        });
-
-        $dropZone.on("dragleave", function (e) {
-          e.preventDefault();
-          e.stopPropagation();
-          $(this).removeClass("drag-over");
-        });
-
-        $dropZone.on("drop", function (e) {
-          e.preventDefault();
-          e.stopPropagation();
-          $(this).removeClass("drag-over");
-
-          const files = e.originalEvent.dataTransfer.files;
-          if (files.length > 0) {
-            processFile(files[0]);
+          if (this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+              var url = e.target.result;
+              var img = new Image();
+              img.onload = function () {
+                var canvas = document.createElement("canvas");
+                var ctx = canvas.getContext("2d");
+                canvas.height = this.height;
+                canvas.width = this.width;
+                ctx.drawImage(this, 0, 0);
+                base_data = canvas
+                  .toDataURL("image/jpeg", 1.0)
+                  .replace(/^data:image.+;base64,/, "");
+              };
+              img.src = url;
+              $("#photo").attr("src", url).show();
+            };
+            reader.readAsDataURL(this.files[0]);
           }
         });
       });

@@ -681,3 +681,324 @@ x==========x
 [2025-10-04 02:51:08,134: INFO: stage_04_model_evaluation]: >>>>>>> Stage Model Evaluation Stage completed <<<<<<<<
 
 x==========x
+[2025-10-04 18:15:04,905: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-04 18:15:04,905: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-04 18:15:28,192: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:15:28] "GET / HTTP/1.1" 200 -
+[2025-10-04 18:15:43,401: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:15:43] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:16:02,218: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:16:02] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:16:10,999: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:16:10] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:16:24,103: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:16:24] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:16:56,081: WARNING: polymorphic_function]: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001E565272430> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[2025-10-04 18:16:56,092: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:16:56] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:17:09,359: WARNING: polymorphic_function]: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001E5653CF790> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[2025-10-04 18:17:09,368: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:17:09] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:32:30,592: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-04 18:32:30,594: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-04 18:32:46,530: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:32:46] "GET / HTTP/1.1" 200 -
+[2025-10-04 18:32:59,686: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:32:59] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:33:13,559: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:33:13] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:33:32,755: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:33:32] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:33:39,052: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:33:39] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:33:46,117: WARNING: polymorphic_function]: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000020C4CBF2430> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[2025-10-04 18:33:46,122: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:33:46] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:33:54,168: WARNING: polymorphic_function]: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000020C4CC20790> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[2025-10-04 18:33:54,175: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:33:54] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:34:05,612: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:34:05] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:34:15,005: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:34:15] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:34:18,433: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:34:18] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:40:06,265: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-04 18:40:06,266: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-04 18:40:24,566: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:40:24] "GET / HTTP/1.1" 200 -
+[2025-10-04 18:40:36,881: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:40:36] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:40:49,952: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:40:49] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:41:04,432: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:41:04] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:41:13,221: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:41:13] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:41:22,590: WARNING: polymorphic_function]: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000022DA6434430> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[2025-10-04 18:41:22,597: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:41:22] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:41:34,352: WARNING: polymorphic_function]: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000022DA658E790> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[2025-10-04 18:41:34,361: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:41:34] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:41:44,199: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:41:44] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 18:59:48,973: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-04 18:59:48,974: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-04 18:59:54,471: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 18:59:54] "GET / HTTP/1.1" 200 -
+[2025-10-04 19:00:04,382: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\kidney-Disease-Classification_DL\app.py", line 35, in predict
+    client_app = ClientApp()
+  File "F:\kidney-Disease-Classification_DL\app.py", line 16, in __init__
+    self.prediction_pipeline = Prediction(self.filename)
+TypeError: __init__() takes 1 positional argument but 2 were given
+[2025-10-04 19:00:04,407: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:00:04] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-10-04 19:00:06,628: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\kidney-Disease-Classification_DL\app.py", line 35, in predict
+    client_app = ClientApp()
+  File "F:\kidney-Disease-Classification_DL\app.py", line 16, in __init__
+    self.prediction_pipeline = Prediction(self.filename)
+TypeError: __init__() takes 1 positional argument but 2 were given
+[2025-10-04 19:00:06,630: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:00:06] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-10-04 19:00:06,909: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\kidney-Disease-Classification_DL\app.py", line 35, in predict
+    client_app = ClientApp()
+  File "F:\kidney-Disease-Classification_DL\app.py", line 16, in __init__
+    self.prediction_pipeline = Prediction(self.filename)
+TypeError: __init__() takes 1 positional argument but 2 were given
+[2025-10-04 19:00:06,912: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:00:06] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-10-04 19:01:26,184: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-04 19:01:26,188: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-04 19:01:31,034: INFO: _internal]: 192.168.108.179 - - [04/Oct/2025 19:01:31] "GET / HTTP/1.1" 200 -
+[2025-10-04 19:01:46,827: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\kidney-Disease-Classification_DL\app.py", line 37, in predict
+    pred = client_app.prediction_pipeline.predict()
+TypeError: predict() missing 1 required positional argument: 'filename'
+[2025-10-04 19:01:46,859: INFO: _internal]: 192.168.108.179 - - [04/Oct/2025 19:01:46] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-10-04 19:05:10,859: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-04 19:05:10,860: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-04 19:05:15,739: INFO: _internal]: 192.168.108.179 - - [04/Oct/2025 19:05:15] "GET / HTTP/1.1" 200 -
+[2025-10-04 19:05:31,139: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\kidney-Disease-Classification_DL\app.py", line 37, in predict
+    pred = client_app.prediction_pipeline.predict()
+  File "F:\kidney-Disease-Classification_DL\src\CNNClassifier\pipeline\prediction.py", line 20, in predict
+    elif result[0][1] == 1:
+IndexError: invalid index to scalar variable.
+[2025-10-04 19:05:31,159: INFO: _internal]: 192.168.108.179 - - [04/Oct/2025 19:05:31] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-10-04 19:07:08,510: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\kidney-Disease-Classification_DL\app.py", line 37, in predict
+    pred = client_app.prediction_pipeline.predict()
+  File "F:\kidney-Disease-Classification_DL\src\CNNClassifier\pipeline\prediction.py", line 20, in predict
+IndexError: invalid index to scalar variable.
+[2025-10-04 19:07:08,578: INFO: _internal]: 192.168.108.179 - - [04/Oct/2025 19:07:08] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-10-04 19:07:31,509: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-04 19:07:31,510: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-04 19:07:37,883: INFO: _internal]: 192.168.108.179 - - [04/Oct/2025 19:07:37] "GET / HTTP/1.1" 200 -
+[2025-10-04 19:07:52,086: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\kidney-Disease-Classification_DL\app.py", line 37, in predict
+    pred = client_app.prediction_pipeline.predict()
+  File "F:\kidney-Disease-Classification_DL\src\CNNClassifier\pipeline\prediction.py", line 18, in predict
+    prediction = self.classes[result]
+TypeError: only integer scalar arrays can be converted to a scalar index
+[2025-10-04 19:07:52,099: INFO: _internal]: 192.168.108.179 - - [04/Oct/2025 19:07:52] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-10-04 19:08:17,174: ERROR: app]: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\dadhi\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "F:\kidney-Disease-Classification_DL\app.py", line 37, in predict
+    pred = client_app.prediction_pipeline.predict()
+  File "F:\kidney-Disease-Classification_DL\src\CNNClassifier\pipeline\prediction.py", line 18, in predict
+    prediction = self.classes[result[0]]
+TypeError: only integer scalar arrays can be converted to a scalar index
+[2025-10-04 19:08:17,209: INFO: _internal]: 192.168.108.179 - - [04/Oct/2025 19:08:17] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-10-04 19:08:47,003: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-04 19:08:47,003: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-04 19:08:50,315: INFO: _internal]: 192.168.108.179 - - [04/Oct/2025 19:08:50] "GET / HTTP/1.1" 200 -
+[2025-10-04 19:09:07,777: INFO: _internal]: 192.168.108.179 - - [04/Oct/2025 19:09:07] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 19:17:44,261: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-04 19:17:44,262: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-04 19:17:53,823: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:17:53] "GET / HTTP/1.1" 200 -
+[2025-10-04 19:18:06,136: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:18:06] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 19:18:20,229: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:18:20] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 19:18:23,080: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:18:23] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 19:18:30,136: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:18:30] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 19:19:27,946: WARNING: polymorphic_function]: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000021993DEF280> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[2025-10-04 19:19:27,951: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:19:27] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 19:19:51,944: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-04 19:19:51,945: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-04 19:19:56,838: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:19:56] "GET / HTTP/1.1" 200 -
+[2025-10-04 19:20:05,820: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:20:05] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 19:24:06,892: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-04 19:24:06,892: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-04 19:24:08,557: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:24:08] "GET / HTTP/1.1" 200 -
+[2025-10-04 19:24:10,189: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:24:10] "GET / HTTP/1.1" 200 -
+[2025-10-04 19:24:18,558: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:24:18] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 19:32:42,213: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-04 19:32:42,213: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-04 19:32:59,313: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:32:59] "GET / HTTP/1.1" 200 -
+[2025-10-04 19:32:59,636: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:32:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-10-04 19:33:13,693: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:33:13] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 19:34:50,160: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:34:50] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 19:34:59,541: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:34:59] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 19:35:08,115: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:35:08] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 19:35:19,123: WARNING: polymorphic_function]: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000021A61D52B80> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[2025-10-04 19:35:19,129: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:35:19] "POST /predict HTTP/1.1" 200 -
+[2025-10-04 19:35:27,910: WARNING: polymorphic_function]: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000021A61D521F0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[2025-10-04 19:35:27,913: INFO: _internal]: 127.0.0.1 - - [04/Oct/2025 19:35:27] "POST /predict HTTP/1.1" 200 -
+[2025-10-05 00:54:42,702: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:54:42] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:54:54,419: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:54:54] "POST /predict HTTP/1.1" 200 -
+[2025-10-05 00:55:11,446: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:55:11] "POST /predict HTTP/1.1" 200 -
+[2025-10-05 00:55:21,235: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:55:21] "POST /predict HTTP/1.1" 200 -
+[2025-10-05 00:57:06,720: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:57:06] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:57:08,134: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:57:08] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:57:08,814: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:57:08] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:57:09,430: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:57:09] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:57:09,964: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:57:09] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:57:10,699: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:57:10] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:57:11,473: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:57:11] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:57:49,625: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-05 00:57:49,626: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-05 00:57:55,574: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:57:55] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:57:56,664: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:57:56] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:57:57,564: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:57:57] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:58:38,885: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:58:38] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:58:39,795: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:58:39] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:58:40,324: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:58:40] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:58:40,699: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:58:40] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:58:41,020: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:58:41] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:58:41,259: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:58:41] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:58:41,486: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:58:41] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:58:41,720: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:58:41] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:58:42,101: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:58:42] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:59:09,366: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-05 00:59:09,367: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-05 00:59:12,685: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:59:12] "GET / HTTP/1.1" 200 -
+[2025-10-05 00:59:29,252: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 00:59:29] "POST /predict HTTP/1.1" 200 -
+[2025-10-05 01:00:18,556: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 01:00:18] "GET / HTTP/1.1" 200 -
+[2025-10-05 01:00:19,497: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 01:00:19] "GET / HTTP/1.1" 200 -
+[2025-10-05 01:00:20,634: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 01:00:20] "GET / HTTP/1.1" 200 -
+[2025-10-05 01:00:50,328: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.108.179:5000
+[2025-10-05 01:00:50,329: INFO: _internal]: [33mPress CTRL+C to quit[0m
+[2025-10-05 01:00:52,530: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 01:00:52] "GET / HTTP/1.1" 200 -
+[2025-10-05 01:01:01,951: INFO: _internal]: 127.0.0.1 - - [05/Oct/2025 01:01:01] "POST /predict HTTP/1.1" 200 -
