@@ -1,6 +1,7 @@
 # kidney-Disease-Classification_DL
 
 ## Workflows
+
 1. Update config.yaml
 2. Update secrets.yaml [optional]
 3. Update params.yaml
@@ -35,16 +36,24 @@ conda activate cnncls
 ```bash
 pip install -r requirenents.txt
 ```
+
 ### dagshub
+
 [dagshub](https://dagshub.com/)\
 MLFLOW_TRACKING_URI = https://dagshub.com/shlok-dadhich/kidney-Disease-Classification_DL.mlflow\
 MLFLOW_TRACKING_USERNAME = 'shlok-dadhich'\
 MLFLOW_TRACKING_PASSWORD = '585f29336580f8c0e6967749768d16c35060e4ca'
 
 RUn this to export as env variables:
+
 ```bash
 export MLFLOW_TRACKING_URI = https://dagshub.com/shlok-dadhich/kidney-Disease-Classification_DL.mlflow
 export MLFLOW_TRACKING_USERNAME = 'shlok-dadhich'
 export MLFLOW_TRACKING_PASSWORD = '585f29336580f8c0e6967749768d16c35060e4ca'
 ```
 
+# DVC cmd
+
+1. dvc init
+2. dvc repro
+3. dvc dag

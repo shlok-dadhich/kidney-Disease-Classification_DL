@@ -635,3 +635,27 @@ x==========x
 [2025-10-03 23:15:36,944: INFO: main]: >>>>>>> Stage Model Evaluation Stage completed <<<<<<<<
 
 x==========x
+[2025-10-04 01:38:30,414: INFO: stage_01_data_ingestion]: >>>>>>> Stage Data Ingestion Stage started <<<<<<<<
+[2025-10-04 01:38:30,418: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-04 01:38:30,420: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-04 01:38:30,421: INFO: common]: Created directory at: artifacts
+[2025-10-04 01:38:30,422: INFO: common]: Created directory at: artifacts/data_injection
+[2025-10-04 01:38:30,423: INFO: data_ingestion]: File already exists of size: [~ 1588634 KB]
+[2025-10-04 01:39:46,095: INFO: data_ingestion]: Extracted zip file to: artifacts\data_injection
+[2025-10-04 01:39:46,098: INFO: stage_01_data_ingestion]: >>>>>>> Stage Data Ingestion Stage completed <<<<<<<<
+
+x==========x
+[2025-10-04 01:45:04,489: INFO: stage_02_prepare_base_model]: >>>>>>> Stage Prepare Base Model Stage started <<<<<<<<
+[2025-10-04 01:45:04,513: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-04 01:45:04,518: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-04 01:45:04,519: INFO: common]: Created directory at: artifacts
+[2025-10-04 01:45:04,520: INFO: common]: Created directory at: artifacts/prepare_base_model
+[2025-10-04 01:45:05,409: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2025-10-04 01:45:05,804: INFO: stage_02_prepare_base_model]: >>>>>>> Stage Prepare Base Model Stage completed <<<<<<<<
+
+x==========x
+[2025-10-04 01:45:21,900: INFO: stage_03_model_training]: >>>>>>> Stage Training started <<<<<<<<
+[2025-10-04 01:45:21,902: INFO: common]: yaml file: config\config.yaml loaded successfully
+[2025-10-04 01:45:21,904: INFO: common]: yaml file: params.yaml loaded successfully
+[2025-10-04 01:45:21,908: INFO: common]: Created directory at: artifacts
+[2025-10-04 01:45:21,909: INFO: common]: Created directory at: artifacts\training
